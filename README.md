@@ -1,3 +1,3 @@
 # responsive-footer
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-g3agur)
+Create a simple responsive footer with CSS Flexbox.

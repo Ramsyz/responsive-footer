@@ -4,14 +4,112 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: lightgray;
+      font-family: sans-serif;
+    }
+    ul {
+      list-style-type: none;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 0px;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 50px 20px;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+    .about {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+    .services {
+      flex-grow: 1;
+      flex-basis: 70%;
+    }
+    .services a {
+      color: #fff;
+    }
+    .services a:hover {
+      color: #gray;
+    }
+
+    .contact {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+    .contact a {
+      color: #fff;
+    }
+    .contact a:hover {
+      color: #gray;
+    }
+    .container h3 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .copyright {
+      padding: 15px 0px;
+      text-align: center;
+      border: 1px solid lightgray;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
   <body>
-    <h1>hello</h1>
+    <footer>
+      <section class="container">
+        <div class="about">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident,
+            modi distinctio. Facere impedit amet eos rem vitae omnis eaque et
+            ipsum harum illum voluptates iure unde fugit dignissimos, eligendi
+            culpa!
+          </p>
+        </div>
+        <div class="services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/">Service1</a></li>
+            <li><a href="/">Service2</a></li>
+            <li><a href="/">Service3</a></li>
+            <li><a href="/">Service4</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>Adress: 123 Main st. New York City, NY</li>
+            <li>Phone: +1-664-123-4567</li>
+            <li>Email: <a href="/"></a>service@company-name.com</li>
+          </ul>
+        </div>
+      </section>
+      <section class="copyright">Copyright</section>
+    </footer>
   </body>
 </html>
